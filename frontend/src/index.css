@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-textMain antialiased;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    @apply bg-card/80 backdrop-blur-md border border-black/5 shadow-sm;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white font-semibold py-2 px-6 rounded-md shadow-md hover:bg-primaryHover hover:shadow-lg transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-surface text-textMain border border-black/5 font-semibold py-2 px-6 rounded-md shadow-sm hover:bg-black/5 transition-all duration-300;
+  }
+}
